@@ -1,0 +1,14 @@
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\bin\Debug\EncapsulationTask.exe.config
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\bin\Debug\EncapsulationTask.exe
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\bin\Debug\EncapsulationTask.pdb
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\bin\Debug\FluentAssertions.dll
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\bin\Debug\nunit.framework.dll
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\bin\Debug\FluentAssertions.pdb
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\bin\Debug\FluentAssertions.xml
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\bin\Debug\nunit.framework.xml
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\obj\Debug\Task.csproj.AssemblyReference.cache
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\obj\Debug\Task.csproj.SuggestedBindingRedirects.cache
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\obj\Debug\Task.csproj.CoreCompileInputs.cache
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\obj\Debug\Task.csproj.CopyComplete
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\obj\Debug\EncapsulationTask.exe
+C:\dev\ulearn-additional\fluent\ForSharing\HttpTask\obj\Debug\EncapsulationTask.pdb
