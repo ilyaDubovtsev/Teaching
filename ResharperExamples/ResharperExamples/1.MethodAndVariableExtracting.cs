@@ -26,11 +26,7 @@ public class MethodAndVariableExtracting
         // Попробуем вынести в отдельную переменную время, которе тело потратило на равноускоренное движение.
         // Для этого выделим endTime - startTime).TotalHours и нажмите Ctrl + Alt + V
         // После выделения переменной можно без лишних нажатий задать ей нужное имя, например time
-
-        var totalHours = (endTime - startTime).TotalHours;
-        var a = totalHours + totalHours +
-                4 * totalHours;
-        return startVelocity + acceleration * totalHours;
+        return startVelocity + acceleration * (endTime - startTime).TotalHours;
     }
 
     /* Выдедение метода Ctrl + Alt + M */
@@ -48,11 +44,6 @@ public class MethodAndVariableExtracting
         // Наши друзья тоже хотят пользоваться этой удобной формулой
         // Попробуем вынести ее в отдельный метод!
         // Выделим startVelocity + acceleration * time и нажмем Ctrl + Alt + M
-        return CalculateAcceleration(startVelocity, acceleration, time);
-    }
-
-    private static double CalculateAcceleration(double startVelocity, double acceleration, double time)
-    {
         return startVelocity + acceleration * time;
     }
 
@@ -65,10 +56,10 @@ public class MethodAndVariableExtracting
         var time = (endTime - startTime).TotalHours;
 
         // Отлично! метод вынесен, мы и можем переиспользовать его много раз!
-        return StartVelocity2(startVelocity, acceleration, time);
+        return StartVelocity(startVelocity, acceleration, time);
     }
 
-    private static double StartVelocity2(double startVelocity, double acceleration, double time)
+    private static double StartVelocity(double startVelocity, double acceleration, double time)
     {
         return startVelocity + acceleration * time;
     }
@@ -84,17 +75,17 @@ public class MethodAndVariableExtracting
         var time = (endTime - startTime).TotalHours;
 
         // Обрадовавшись новой фиче, наш друг использовал код для своих экспериментов
-        // Но он нашел неточность в названии метода. "Какой же это StartVelocity2()? Это перегрузка CalculateConstantAccelerationVelocity()!"
-        // Давайте исправим название метода выделим StartVelocity2 либо в месте объявления, либо в месте использования и нажмем F2
+        // Но он нашел неточность в названии метода. "Какой же это StartVelocity()? Это перегрузка CalculateConstantAccelerationVelocity()!"
+        // Давайте исправим название метода выделим StartVelocity либо в месте объявления, либо в месте использования и нажмем F2
         var someVelocities = new []
         {
-            StartVelocity2(startVelocity, acceleration - 3, time),
-            StartVelocity2(startVelocity, acceleration - 2, time),
-            StartVelocity2(startVelocity, acceleration - 1, time),
-            StartVelocity2(startVelocity, acceleration, time),
-            StartVelocity2(startVelocity, acceleration + 1, time),
-            StartVelocity2(startVelocity, acceleration + 2, time),
-            StartVelocity2(startVelocity, acceleration + 3, time)
+            StartVelocity(startVelocity, acceleration - 3, time),
+            StartVelocity(startVelocity, acceleration - 2, time),
+            StartVelocity(startVelocity, acceleration - 1, time),
+            StartVelocity(startVelocity, acceleration, time),
+            StartVelocity(startVelocity, acceleration + 1, time),
+            StartVelocity(startVelocity, acceleration + 2, time),
+            StartVelocity(startVelocity, acceleration + 3, time)
         };
 
         return someVelocities.Max();
